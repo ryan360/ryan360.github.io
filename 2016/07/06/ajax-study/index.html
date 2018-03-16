@@ -17,7 +17,7 @@
 <meta property="og:url" content="https://ryan360.github.io/2016/07/06/ajax-study/index.html">
 <meta property="og:site_name" content="Ryan&#39;s Blog">
 <meta property="og:description" content="ajax简单教程：     ajax常用的方法，一些容易出错的地方">
-<meta property="og:updated_time" content="2017-08-03T23:45:48.000Z">
+<meta property="og:updated_time" content="2018-03-16T16:22:41.779Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ajax简单教程">
 <meta name="twitter:description" content="ajax简单教程：     ajax常用的方法，一些容易出错的地方">
@@ -363,7 +363,7 @@
 </ol>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">$.ajax(&#123;</span><br><span class="line">    type: <span class="string">"get"</span>,</span><br><span class="line">    url: <span class="string">"http://www.cnblogs.com/rss"</span>,</span><br><span class="line">    beforeSend: <span class="function"><span class="keyword">function</span>(<span class="params">XMLHttpRequest</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//ShowLoading();</span></span><br><span class="line">    &#125;,</span><br><span class="line">    success: <span class="function"><span class="keyword">function</span>(<span class="params">data, textStatus</span>)</span>&#123;</span><br><span class="line">        $(<span class="string">".ajax.ajaxResult"</span>).html(<span class="string">""</span>);</span><br><span class="line">        $(<span class="string">"item"</span>,data).each(<span class="function"><span class="keyword">function</span>(<span class="params">i, domEle</span>)</span>&#123;</span><br><span class="line">        $(<span class="string">".ajax.ajaxResult"</span>).append(<span class="string">"&lt;li&gt;"</span>+$(domEle).children(<span class="string">"title"</span>).text()+<span class="string">"&lt;/li&gt;"</span>);</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">    &#125;,</span><br><span class="line">    complete: <span class="function"><span class="keyword">function</span>(<span class="params">XMLHttpRequest, textStatus</span>)</span>&#123;</span><br><span class="line">    <span class="comment">//HideLoading();</span></span><br><span class="line">    &#125;,</span><br><span class="line">    error: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="comment">//请求出错处理</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="http://geeksblog.cc" target="_blank" rel="noopener">我的博客</a></p>
+<p>如果文章对你有帮助,请去我的博客留个言吧! <a href="https://ryan360.github.io">我的博客</a></p>
 </blockquote>
 </the>
       
@@ -376,7 +376,7 @@
         <p><span>本文标题:</span><a  href="/2016/07/06/ajax-study/">ajax简单教程</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 蒋华强|Ryan 的个人博客">蒋华强|Ryan</a></p>
         <p><span>发布时间:</span>2016年07月06日 - 20时53分</p>
-        <p><span>最后更新:</span>2017年08月04日 - 07时45分</p>
+        <p><span>最后更新:</span>2018年03月17日 - 00时22分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/07/06/ajax-study/" title="ajax简单教程">https://ryan360.github.io/2016/07/06/ajax-study/</a>
             <span class="copy-path" data-clipboard-text="原文: https://ryan360.github.io/2016/07/06/ajax-study/　　作者: 蒋华强|Ryan" title=""></span>
